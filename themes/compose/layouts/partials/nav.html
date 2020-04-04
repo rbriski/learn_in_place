@@ -1,15 +1,8 @@
 <nav class="wrap nav">
 	<a href="{{ .Site.BaseURL }}">
-		<picture>
-			{{- $logos := .Site.Params.logo }}
-			{{- $normalPath := absURL (printf "images/%s" $logos.lightMode) }}
-			{{- $darkPath := absURL (printf "images/%s" $logos.darkMode) }}
-			
-			<source srcset = '{{ $darkPath }}' media="(prefers-color-scheme: dark)">
-			<img srcset = '{{ $normalPath }}' alt = '{{ .Site.Title }} Logo'>
-		</picture>
+		{{- $logo := .Site.Params.logo }}
+		<img src='images/{{ $logo }}' alt='{{ .Site.Title }} Logo' height='150px'> {{ .Site.Title}}
 	</a>
-	{{- partial "search.html" . }}
 	<ul class="nav_body">
 		{{- $p := . }}
 		{{- range .Site.Menus.main }}
@@ -20,7 +13,10 @@
 			{{- end }}
 			{{- $url := urls.Parse .URL }}
 			{{- $baseurl := $.Site.BaseURL }}
-			<a class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ $baseurl }}{{ .Permalink }}{{ else }}{{ $baseurl }}{{ .URL }}{{ end }}"><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+			<a class="nav-link{{if $active }} active{{end}}"
+				href="{{ with .Page }}{{ $baseurl }}{{ .Permalink }}{{ else }}{{ $baseurl }}{{ .URL }}{{ end }}">
+				<span{{if $active }} class="active" {{end}}>{{ .Name }}</span>
+			</a>
 		</li>
 		{{- end }}
 		{{ $repo := .Site.Params.source }}

@@ -1,0 +1,33 @@
+{{- define "main" }}
+<div class="container my-4">
+    <div class="row">
+        <div class="col-6 mx-auto col-md-6 order-md-2">
+            <img src="images/hero.png" height="400px" />
+        </div>
+        <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
+            <h1 class="mb-3 bd-text-purple-bright">Learn In Place</h1>
+            <p class="lead">
+                COVID-19 is shutting down schools all over the world. We've been sheltering in place since the middle of
+                March. Our school district, San Jose Unified, has announced that school will not resume this year but
+                learning will still take place online.
+            </p>
+            <p class="lead mb-4">
+                Most children didn't have the opportunity to take home school supplies on the last day of school. Some
+                families aren't able to easily replace those supplies. This site will explain how we purchased supplies,
+                packaged them and distributed them.
+            </p>
+            <div class="row mx-n2">
+                <div class="col-md px-2">
+                    <a href="/build-kits/" class="btn btn-lg btn-outline-primary w-100 mb-3"
+                        onclick="ga('send', 'event', 'Jumbotron actions', 'Build kits', 'Build kits');">Build kits</a>
+                </div>
+                <div class="col-md px-2">
+                    <a href="/learning-resources/" class="btn btn-lg btn-outline-secondary w-100 mb-3"
+                        onclick="ga('send', 'event', 'Jumbotron actions', 'Learning resources', 'Learning resources');">Learning
+                        resources</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{- end }}
