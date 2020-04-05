@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="container mt-4">
+    <div class="row">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+    </div>
+</div>
+
+<!-- Ranges through content/posts/*.md -->
+{{ range .Pages.ByWeight }}
+<div class="container">
+    <div class="row">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}
+{{ end }}
