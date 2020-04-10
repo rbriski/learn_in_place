@@ -2,6 +2,7 @@
 title: Materials 
 description: What goes into the kits
 weight: 10
+image: supplies_thumb.png
 
 ---
 We got all of our materials on Amazon.  It just seemed like the easiest and safest thing to do.  I had initially looked at prebuilt kits but they ended being a lot more expensive than buying the items separately and then packing them together.  
