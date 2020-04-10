@@ -3,7 +3,3 @@ This site is not trying to raise money to make more of these.  We want to show y
 
 ## Materials
 We're always looking to buy supplies that have a decent level of quality at the best price.  That way we can make more kits for more people.  My children are elementary age so that informs what I've put in my kits.  You can add or remove items as it makes sense.
-
-| Item | Count | Link |
-| --- | --- | --- |
-| Markers | 13 | https://www.amazon.com |
