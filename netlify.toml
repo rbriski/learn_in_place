@@ -1,0 +1,9 @@
+[[redirects]]
+    from = "/r/en/sjusd
+    to = "https://www.sjusd.org/who-we-are/covid-19-updates/covid-19-updates/18/"
+    status = 302
+    
+[[redirects]]
+    from = "/r/es/sjusd"
+    to = "https://www.sjusd.org/es/who-we-are/covid-19-updates/covid-19-updates/18/"
+    status = 302
